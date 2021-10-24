@@ -293,6 +293,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-three/flex@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@react-three/flex@npm:0.7.0"
+  dependencies:
+    yoga-layout-prebuilt: ^1.9.6
+  peerDependencies:
+    "@react-three/fiber": ">=6.0"
+    react: ^17.0.2
+    three: ">=0.126"
+  checksum: ac63a35b8614bf073983a884491c410f5b6917be001f5f2f02be2d40b712ae0e5d1cd129b48bdba779c150aa39492d2ecec3b2756dc4172fafaaca744d242fdf
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:1":
   version: 1.1.2
   resolution: "@tootallnate/once@npm:1.1.2"
@@ -304,6 +317,13 @@ __metadata:
   version: 16.11.2
   resolution: "@types/node@npm:16.11.2"
   checksum: 237662369cd4d44fe8f14c8deffba06bfdc5ec30029e98aae3ee262a8d51d5605dc44a52e101ee1e88e678abde26104ace07f604f0cccc6d6b759162437fc435
+  languageName: node
+  linkType: hard
+
+"@types/yoga-layout@npm:1.9.2":
+  version: 1.9.2
+  resolution: "@types/yoga-layout@npm:1.9.2"
+  checksum: a701328c5e3614847a92778b6b5e63e9d3fb8494f8aa807b21ef9359aff1b9b443c540e96fe7119008fc3572990afb8855d44864ddc250bc21a2aa1bd497f53c
   languageName: node
   linkType: hard
 
@@ -2938,6 +2958,7 @@ fsevents@~2.3.1:
   dependencies:
     "@react-three/drei": 7.6.1
     "@react-three/fiber": 7.0.6
+    "@react-three/flex": ^0.7.0
     next: latest
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -3751,6 +3772,15 @@ fsevents@~2.3.1:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 096c3b40beb2804659539be1605a35c58eb0c85285f94b77b3e924f42ee265c1a40bf9f4153770039517146b469a964d51742395f35ca8135fc9f7e4982b785d
+  languageName: node
+  linkType: hard
+
+"yoga-layout-prebuilt@npm:^1.9.6":
+  version: 1.10.0
+  resolution: "yoga-layout-prebuilt@npm:1.10.0"
+  dependencies:
+    "@types/yoga-layout": 1.9.2
+  checksum: e8db26850d5ea55d0538522245c2343d555e82d3528837cfb371040b4a877a7a4860aeb325e15fa5061bcca0a2dac6abd5af2051f584048009f2c5b4bb8afdf7
   languageName: node
   linkType: hard
 
