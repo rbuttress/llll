@@ -10,7 +10,7 @@ export default function Systems() {
    
        <h2 className="noselect">Modular CNC Fabric Cutting and Dispensing Table</h2>
    
-        <h3>182.88cm, 72inch working area. Designed for automated roll to roll fabric 
+        <h3 className="noselect">182.88cm, 72inch working area. Designed for automated roll to roll fabric 
         cutting in garment fabrication contexts. Light weight and designed for small 
         work spaces. Prototype completion expected 12/1/21. Opensource part files (.step) 
         coming soon.</h3>
