@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const menu = [
-    { title: 'Full', path: '/' },
-    { title: 'Systems', path: '/systems' },
-    { title: 'Directory', path: '/contact' },
+    { uid: 0, title: 'Full', path: '/' },
+    { uid: 1, title: 'Systems', path: '/systems' },
+    { uid: 2, title: 'Directory', path: '/contact' },
   ]
 
 export default function Navigation() {
@@ -14,10 +14,10 @@ export default function Navigation() {
     return (
         <nav className="noselect">
             <ul>
-                {menu.map((item, index) => {
+                {menu.map((item) => {
                     return (
                         <li>
-                            <Link key={index} href={item.path}>
+                            <Link key={item.uid} href={item.path}>
                                 <a
                                 className={`cursor-pointer ${
                                     router.pathname === item.path

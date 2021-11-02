@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { Canvas  } from '@react-three/fiber'
 import { OrbitControls, Stage, useProgress, Html } from '@react-three/drei'
+import { useRouter } from 'next/router'
 
 import E from './Geometry/E'
 import X from './Geometry/X'
@@ -18,7 +19,15 @@ function CustomLoader() {
 }
 
 
+
 export default function Projection() {
+    
+    const router = useRouter();
+    const path = router.pathname;
+    const xposition = path === "/systems" ? .1 : 0;
+    const eposition = path === "/systems" ? .3 : 0;
+    const vposition = path === "/systems" ? .4 : 0;
+    
     return (
         <Canvas 
             shadows 
@@ -38,9 +47,9 @@ export default function Projection() {
         <Suspense fallback={<CustomLoader />}>
             <Stage adjustCamera={false} preset="rembrandt" environment="city" intensity={0.5} contactShadowOpacity={0.6} contactShadowBlur={1}>
             <Y position={[0, 0, 0]} />
-            <X position={[0, 0.10, 0]} />
-            <E position={[0, 0, 0.20]} />
-            <V position={[0, 0.40, 0]} />
+            <X position={[0, xposition, 0]} />
+            <E position={[0, 0, eposition]} />
+            <V position={[0, vposition, 0]} />
             </Stage>
         </Suspense>
 
