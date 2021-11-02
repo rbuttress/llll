@@ -25,7 +25,6 @@ export default function Projection() {
     const router = useRouter();
     const path = router.pathname;
     const xposition = path === "/systems" ? .1 : 0;
-    const eposition = path === "/systems" ? .3 : 0;
     const vposition = path === "/systems" ? .4 : 0;
     
     return (
@@ -48,7 +47,7 @@ export default function Projection() {
             <Stage adjustCamera={false} preset="rembrandt" environment="city" intensity={0.5} contactShadowOpacity={0.6} contactShadowBlur={1}>
             <Y position={[0, 0, 0]} />
             <X position={[0, xposition, 0]} />
-            <E position={[0, 0, eposition]} />
+            <E position={[0, 0, 0]} />
             <V position={[0, vposition, 0]} />
             </Stage>
         </Suspense>
