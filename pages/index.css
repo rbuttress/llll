@@ -14,7 +14,7 @@ canvas {
 
 h1 {
   display: flex;
-  font-size: 5vw;
+  font-size: 4vw;
   line-height:4vw;
   justify-content: center;
   align-content: center;
@@ -24,7 +24,7 @@ h1 {
 
 h2 {
   display: flex;
-  font-size: 4vw;
+  font-size: 3vw;
   line-height: normal;
   justify-content: center;
   align-content: center;
@@ -34,7 +34,8 @@ h2 {
 
 h3 {
   display: flex;
-  font-size: 3vw;
+  font-size: 2vw;
+  line-height: normal;
   justify-content: center;
   align-content: center;
   color: black;
@@ -62,6 +63,16 @@ nav ul li:hover{
   background-color:RED;
 }
 nav ul li a{
+  text-decoration: none;
+  color: #000;
+  padding: 30px;
+}
+
+.active{
+  background-color:RED;
+}
+
+.inactive{
   text-decoration: none;
   color: #000;
   padding: 30px;

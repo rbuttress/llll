@@ -6,7 +6,7 @@ export default function Contact() {
     <>
    
         <div className="content"> 
-        <h2>Inquiry:</h2><h3><a href="mailto:communications@full.international">communications@full.international</a></h3>
+        <h2 className="noselect">Inquiry:</h2><h3><a href="mailto:communications@full.international">communications@full.international</a></h3>
         </div>
     
     </>
