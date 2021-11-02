@@ -14,7 +14,7 @@ canvas {
 
 h1 {
   display: flex;
-  font-size: 4vw;
+  font-size: min(4vw, 42px);
   line-height:4vw;
   justify-content: center;
   align-content: center;
@@ -24,7 +24,7 @@ h1 {
 
 h2 {
   display: flex;
-  font-size: 3vw;
+  font-size: min(3vw, 36px);
   line-height: normal;
   justify-content: center;
   align-content: center;
@@ -34,7 +34,7 @@ h2 {
 
 h3 {
   display: flex;
-  font-size: 2.2vw;
+  font-size: min(2.4vw, 26px);
   line-height: normal;
   justify-content: center;
   align-content: center;
